@@ -1,0 +1,93 @@
+<!-- One important thing is shortcuts that I forget ocassionally -- 1.alt+shift+w(wrap emmet) 2.alt+shift+down(copy down) 3.cmd+/(comment the line) -->
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- extra meta data for seo -->
+    <meta
+      name="description"
+      content="This is simple description of my website."
+    />
+    <meta name="keywords" content="html, htmlsite, Linux, Linux Decoded" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <title>Linux Decoded</title>
+
+    <!-- Link/reference to external css file -->
+    <link rel="stylesheet" href="includes/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+
+    <!-- Example of internal CSS -->
+    <style>
+      #h3 {
+        color: purple;
+        background-color: cornsilk;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <img id="logo" src="/includes/avatar.png" alt="Logo" />
+
+    <div class="topnav">
+      <a href="/index.html">Linux Decoded</a>
+    </div>
+    
+    <div class="topnav">
+      <a href="/Blogs.html">Blogs</a>
+    </div>
+    
+    <div class="topnav">
+      <a href="/About.html">About</a>
+    </div>
+    
+    <div class="toggle-container">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider">
+        <span class="slider round"></span>
+    </label>
+    </div>
+   
+    <script>
+      function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+                trans()
+            } else {
+                setTheme('theme-dark');
+                trans()
+            }
+        }
+
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+              document.getElementById('slider').checked = true;
+            }
+        })
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition')
+            }, 1000)
+        };
+    </script>
+
+      <!--<img
+        src="https://source.unsplash.com/user/jakehills/1000x433"
+        alt="Photos from Jake Hills"/><br /><br /> -->
+  </body>
+</html>
