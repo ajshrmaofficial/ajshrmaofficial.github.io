@@ -29,3 +29,18 @@
     height: 45px;
     width: 45px;
 }
+
+.round_corner {
+    border-radius: 30px;
+    border: 1px solid #f0f6fc;
+}
+
+.headings {
+    text-align: center;
+}
+
+#about {
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
