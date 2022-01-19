@@ -10,6 +10,10 @@
     font-family: "Ubuntu";
 }
 
+#navdiv {
+    margin-top: 10px;
+}
+
 .topnav {
     background-color: #30363d;
     overflow: hidden;
@@ -31,7 +35,8 @@
     background-color: #30363d;
     overflow: hidden;
     border-radius: 30px;
-    padding: 10px;
+    padding: 5px;
+    margin-bottom: 7px;
     display: inline-block;
 }
 
