@@ -25,6 +25,26 @@
     font-size: 23px;
 }
 
+.footer {
+    background-color: #30363d;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.footer a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-size: 15px;
+}
+
+.footer img {
+    height: 19px;
+    width: 19px;
+}
+
 #logo {
     height: 45px;
     width: 45px;
