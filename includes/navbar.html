@@ -1,19 +1,22 @@
-<div id="navdiv">
-  <a href="/index.html">
-    <img id="logo" src="/includes/avatar.png" alt="Logo">
-  </a>
+<script src="/includes/nav.js"></script>
 
-  <div class="topnav">
-    <a href="/index.html">Linux Decoded</a>
-  </div>
-
-  <div class="topnav">
-    <a href="/Blogs.html">Blogs</a>
-  </div>
-
-  <div class="topnav">
-    <a href="/About.html">About</a>
-  </div>
-  
-</div>
-
+<header class="primary-header flex">
+  <img id="logo" src="/includes/avatar.png" alt="Logo">
+  <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+  <nav>
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">    
+      <li>
+        <a href="/index.html">
+          Home
+        </a>
+      <li>
+        <a href="/Blogs.html">
+          Blogs
+        </a>
+      <li>
+        <a href="/About.html">
+          About
+        </a>
+    </ul>
+  </nav>
+</header>
