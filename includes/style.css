@@ -113,13 +113,15 @@
 }
 
 #avatar{
-    height: 45px;
-    width: 45px;
+    height: 115px;
+    width: 115px;
     display: block;
-    margin: -2% auto;
+    /* margin: -2% auto; */
     border-radius: 50%;
-    border: 6px solid black;
+    border: 8px solid #161b22;
     position: absolute;
+    right: 48%;
+    top: 2%;
 }
 /* @media (max-width: 35em) {
     .primary-navigation {
