@@ -103,9 +103,6 @@
 } */
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 25px;
     line-height: 1.6;
     /* margin-top: -63px; */
@@ -126,6 +123,12 @@
     position: absolute;
     right: 48%;
     top: 2%;
+}
+
+.imageSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* * {box-sizing:border-box} */
