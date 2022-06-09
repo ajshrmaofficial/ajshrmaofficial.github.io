@@ -10,11 +10,6 @@
     font-family: "Ubuntu";
 }
 
-@viewport {
-    width: device-width;
-    zoom: 1;
-}
-
 .flex {
     display: flex;
     gap: var(--gap, 5px);
