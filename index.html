@@ -3,13 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- extra meta data for seo -->
-    <meta name="description" content="This is simple description of my website.">
-    <meta name="keywords" content="html, htmlsite, Linux, Linux Decoded">
-    <meta name="robots" content="INDEX, FOLLOW">
     <title>Linux Decoded</title>
-    <link rel="shortcut icon" type="image/png" href="/includes/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="/includes/imgs/favicon.ico">
 
     <!-- Link/reference to external css file -->
     <link rel="stylesheet" href="includes/style.css">
@@ -22,25 +17,51 @@
         $('#footer').load("includes/footer.html");
       });
     </script>
+    
   </head>
 
   <body>
     <div id="header"></div>
     
     <div class="container">
-      <p class="headings"><u>Recent Updates</u></p>
-      <br>
-      <img class="round_corner" src="https://github-readme-stats.vercel.app/api?username=linuxdecoded&theme=github_dark&show_icons=true&include_all_commits=false" alt="GitHub Stats">
-      
-      <!-- <img class="round_corner" src="https://source.unsplash.com/user/jakehills/1000x433" alt="Photos from Jake Hills"/> -->
-      
-      <iframe class="round_corner" id="reddit-embed" src="https://www.redditmedia.com/r/hackintosh/comments/s4qdl4/macos_monterey_on_hp_15bs617tu_laptop/?ref_source=embed&amp;ref=share&amp;embed=true&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" height="381" width="640" scrolling="no"></iframe>
+      <!--Image Slider-->
+      <div class="imageSlider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <!-- <img class="round_corner" src="https://source.unsplash.com/user/jakehills/640x381"> -->
+            <img class="round_corner" src="/includes/imgs/mountain.jpg">
+            <div class="text">Beautiful Mountain</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <img class="round_corner" src="https://github-readme-stats.vercel.app/api?username=linuxdecoded&theme=github_dark&show_icons=true&include_all_commits=false" alt="GitHub Stats">
+            <div class="text">GitHub Stats</div>
+          </div>
+          <div class="mySlides fade">
+            <iframe class="round_corner" id="reddit-embed" src="https://www.redditmedia.com/r/hackintosh/comments/s4qdl4/macos_monterey_on_hp_15bs617tu_laptop/?ref_source=embed&amp;ref=share&amp;embed=true&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="381" width="640" scrolling="no"></iframe>
+            <div class="text">Reddit Post</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <iframe class="round_corner" width="560" height="315" src="https://www.youtube.com/embed/K6bgcOMm0A0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text">My video with most views</div>
+          </div>
+          <!-- Next and previous buttons -->
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dotDiv" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
 
-      <ul>
-        <li>Just finished creating my first mail server with linode and free domain linuxdecoded.tk, well my mail address is <a href="mailto: ajay@linuxdecoded.tk" style="color: #f0f6fc;">ajay@linuxdecoded.tk</a> !!</li>
-      </ul>
     </div>
 
     <div id="footer"></div>
+    <script src="/includes/script.js"></script>
   </body>
 </html>
