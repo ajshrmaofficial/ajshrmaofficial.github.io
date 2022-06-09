@@ -137,7 +137,7 @@
 .slideshow-container {
   max-width: 1000px;
   position: absolute;
-  top: 12%;
+  top: 108px;
   /* margin: 0 auto; */
   /* width: 80%; */
 }
@@ -151,7 +151,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 452px;
   width: auto;
   margin-top: -10%;
   padding: 16px;
@@ -195,7 +195,7 @@
 /* The dots/bullets/indicators */
 .dotDiv {
   position: absolute;
-  top: 53%;
+  top: 477px;
 }
 
 .dot {
