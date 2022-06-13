@@ -202,6 +202,7 @@
   to {opacity: 1}
 }
 
-/* #more {
-  display: block;
-} */
+#mainText {
+  position: absolute;
+  top: 550px;
+}
