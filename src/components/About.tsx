@@ -5,6 +5,10 @@ function About(){
     return(
         <div id='about' className='about'>
             <img src={logo} alt="logo" />
+            <div>
+                <h3>ABOUT ME</h3>
+                
+            </div>
         </div>
     )
 }
