@@ -1,0 +1,95 @@
+:root{
+  --background: #f9f9f9;
+  --white: #ffffff;
+  --dark-text: #2d2e32;
+  --light-text: #555555;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-text);
+}
+
+.app{
+  background-color: var(--background);
+  min-height: 100dvh;
+}
+
+.content{
+  margin: 7rem auto;
+  max-width: 107rem;
+}
+
+.navbar{
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.navlinks{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.blob{
+  background-image: url('../assets/profile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40rem;
+  width: 40rem;
+  border: 3px solid black;
+  overflow: hidden;
+  transition: border-radius 2000ms ease-in;
+}
+
+.hero-section{
+  height: 60rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section h1{
+  font-size: 5.4rem;
+}
+
+.hero-section h2{
+  font-size: 3rem;
+}
+
+.hero-title{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title div{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-section{
+    flex-direction: column;
+  }
+}
+
+.about{
+  height: 100dvh;
+}
