@@ -92,4 +92,15 @@ a {
 
 .about{
   height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about img{
+  width: 40rem;
+}
+
+.about div{
+  width: 100%;
 }
