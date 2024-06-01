@@ -1,39 +1,36 @@
 import { useState, useEffect } from 'react';
-import '../styles/App.css'
+import ProfileImage from '../assets/profile.jpg'
 
 function ProfileBlob() {
-    const borderRadiusArr = ['30% 70% 29% 71% / 89% 61% 39% 11%', '30% 70% 67% 33% / 89% 61% 39% 11%', '30% 70% 67% 33% / 34% 61% 39% 66%', 
-        '78% 22% 67% 33% / 34% 61% 39% 66%', '78% 22% 67% 33% / 34% 90% 10% 66%', '78% 22% 88% 12% / 34% 90% 10% 66%', '78% 22% 88% 12% / 34% 37% 63% 66%'
+    const borderRadiusArr = ['28% 72% 74% 26% / 7% 35% 65% 93%', '86% 14% 28% 72% / 66% 12% 88% 34%', '78% 22% 46% 54% / 90% 78% 22% 10%', '37% 63% 51% 49% / 11% 26% 74% 89%'
     ];
     const [currBorderRadius, setCurrBorderRadius] = useState(borderRadiusArr[0]);
     
     useEffect(()=>{
         const ChooseRandom = () => {
-            let num = Math.floor(Math. random() * (6 - 0) + 0);
+            let num = Math.floor(Math. random() * (3 - 0) + 0);
             while(currBorderRadius===borderRadiusArr[num]){
-                num=Math.floor(Math. random() * (6 - 0) + 0);
+                num=Math.floor(Math. random() * (3 - 0) + 0);
             }
             setCurrBorderRadius(borderRadiusArr[num]);
         }
         setTimeout(()=>{
             ChooseRandom();
-        }, 2000)
+        }, 8000) 
     }, [currBorderRadius])
     
-    return(<>
-        <div className='blob' style={{borderRadius: currBorderRadius}}/>
-        </>
+    return(
+        <div className='lg:size-9/12 overflow-hidden transition-[border-radius] ease-in-out duration-[8000ms]' style={{borderRadius: currBorderRadius}}>
+            <img className='w-full h-full' src={ProfileImage} alt="Profile Image" />
+        </div>
     )
 }
 
 export default ProfileBlob;
 
 /* border-radius values for various blobs ->
-30% 70% 29% 71% / 89% 61% 39% 11% 
-30% 70% 67% 33% / 89% 61% 39% 11% 
-30% 70% 67% 33% / 34% 61% 39% 66% 
-78% 22% 67% 33% / 34% 61% 39% 66% 
-78% 22% 67% 33% / 34% 90% 10% 66% 
-78% 22% 88% 12% / 34% 90% 10% 66% 
-78% 22% 88% 12% / 34% 37% 63% 66% 
+28% 72% 74% 26% / 7% 35% 65% 93%
+86% 14% 28% 72% / 66% 12% 88% 34%
+78% 22% 46% 54% / 90% 78% 22% 10%
+37% 63% 51% 49% / 11% 26% 74% 89% 
 */
