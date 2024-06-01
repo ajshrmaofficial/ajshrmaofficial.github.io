@@ -1,13 +1,12 @@
-import Content from './components/Content'
 import NavBar from './components/NavBar'
-import './styles/App.css'
+import Page from './components/Page'
 
 function App() {
 
   return (
-    <div className='app'>
+    <div className='bg-offWhite'>
       <NavBar/>
-      <Content/>
+      <Page/>
     </div>
   )
 }
