@@ -1,4 +1,3 @@
-import '../styles/App.css'
 import logo from '../assets/ajay sharma logo.png'
 
 function About(){
