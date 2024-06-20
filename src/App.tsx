@@ -1,13 +1,16 @@
-import NavBar from './components/NavBar'
-import Page from './components/Page'
+import Desktop from "./components/Desktop"
+import BottomBar from "./components/bottomBar"
+import { WindowManagerProvider } from "./utility/context/windowManagerContext"
 
 function App() {
 
   return (
+    <WindowManagerProvider>
     <div className='bg-offWhite'>
-      <NavBar/>
-      <Page/>
+      <Desktop/>
+      <BottomBar/>
     </div>
+    </WindowManagerProvider>
   )
 }
 
