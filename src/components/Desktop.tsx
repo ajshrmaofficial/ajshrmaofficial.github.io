@@ -1,12 +1,13 @@
-import SpawningSpace from "./spawningSpace";
-import SystemBackground from "./systemBackground";
+import useWindowManager from "../utility/hooks/useWindowManager";
+import backgroundImage from '../assets/mustang.jpg'
 
 function Desktop(){
-    return(
-        <div>
-            <SpawningSpace/>
-            <SystemBackground/>
-        </div>
+    const {components} = useWindowManager();
+    return(<>
+    <div className='h-screen w-screen bg-cover' style={{backgroundImage: `url(${backgroundImage})`}}>
+        {components}
+    </div>
+    </>
     )
 }
 
