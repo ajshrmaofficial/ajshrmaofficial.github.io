@@ -21,7 +21,7 @@ function NavBar(){
 function MobileNavMenu(){
     const [isOpen, setIsOpen] = useState(false);
     return(
-        <div className="lg:hidden cursor-pointer absolute right-10">
+        <div className="lg:hidden cursor-pointer absolute right-0 top-1 border p-4 rounded bg-white">
             <h3 className="font-medium" onClick={()=>{setIsOpen(!isOpen)}}>{isOpen ? 'Close' : 'Menu'}</h3>
             {isOpen && <ul className='flex flex-col items-end gap-3'>
                 {navBarContents.map(item=>(
