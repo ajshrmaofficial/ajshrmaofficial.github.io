@@ -8,7 +8,7 @@ import cIcon from "../assets/c.svg";
 import linuxIcon from "../assets/linux.svg";
 import dockerIcon from "../assets/docker.svg";
 import bashIcon from "../assets/bash.svg";
-import { useState } from "react";
+// import { useState } from "react";
 
 const techArray = [
   { name: "React", path: reactIcon },
@@ -24,12 +24,12 @@ const techArray = [
 ];
 
 function TechStack(): React.JSX.Element {
-    const [showTagName, setShowTagName] = useState('');
+    // const [showTagName, setShowTagName] = useState('');
   return (
     <div className="flex gap-2">
       {techArray.map((tech) => (
         <div className="">
-            <img onClick={()=>setShowTagName(tech.name)} src={tech.path} alt={tech.name} key={tech.name} className="w-14 h-14 border p-2 rounded-md cursor-pointer z-50 bg-offWhite"/>
+            <img src={tech.path} alt={tech.name} key={tech.name} className="w-14 h-14 border p-2 rounded-md cursor-pointer z-50 bg-offWhite"/>
         </div>
       ))}
     </div>
