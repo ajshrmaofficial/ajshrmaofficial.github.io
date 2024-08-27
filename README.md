@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# Ajay Sharma Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This project is a personal portfolio website for Ajay Sharma, showcasing his skills, projects, and experience. The website is built using React, TypeScript, and Tailwind CSS, ensuring a modern and responsive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+* **Home Page:** Displays a brief introduction, featured projects, and contact information.
+* **About Page:** Provides details about Ajay Sharma's background, interests, and professional goals.
+* **Projects:** Features a curated list of Ajay Sharma's past projects, highlighting their technologies and accomplishments.
+* **Technology Stack:** Showcases the diverse range of technologies Ajay Sharma is proficient in, visualized with icons.
+* **Responsive Design:** Adapts to different screen sizes, ensuring optimal viewing on desktop, tablet, and mobile devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ajshrmaofficial/ajshrmaofficial.github.io.git
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Navigate to the project directory:**
+   ```bash
+   cd ajshrmaofficial.github.io
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   This command will start a local server and open the portfolio website in your default browser.
+
+2. **Build the production bundle:**
+   ```bash
+   npm run build
+   ```
+   This command will create an optimized build of the website in the `dist` directory, ready for deployment.
+
+## Contact Information
+
+You can contact Ajay Sharma through:
+
+* **Email:** [ajshrmaofficial@gmail.com](mailto:ajshrmaofficial@gmail.com)
+* **GitHub:** [https://github.com/ajshrmaofficial](https://github.com/ajshrmaofficial)
+
+Feel free to explore the website and get in touch with any questions or opportunities!
