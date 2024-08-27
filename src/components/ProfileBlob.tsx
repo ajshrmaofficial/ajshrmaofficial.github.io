@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import ProfileImage from '../assets/profile.jpg'
+import ProfileImage from '../assets/jpg/profile.jpg'
+
+const borderRadiusArr = ['28% 72% 74% 26% / 7% 35% 65% 93%', '86% 14% 28% 72% / 66% 12% 88% 34%', '78% 22% 46% 54% / 90% 78% 22% 10%', '37% 63% 51% 49% / 11% 26% 74% 89%'
+];
 
 function ProfileBlob() {
-    const borderRadiusArr = ['28% 72% 74% 26% / 7% 35% 65% 93%', '86% 14% 28% 72% / 66% 12% 88% 34%', '78% 22% 46% 54% / 90% 78% 22% 10%', '37% 63% 51% 49% / 11% 26% 74% 89%'
-    ];
     const [currBorderRadius, setCurrBorderRadius] = useState(borderRadiusArr[0]);
     
     useEffect(()=>{
