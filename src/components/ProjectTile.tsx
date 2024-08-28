@@ -37,15 +37,15 @@ const truncateText = (text: string, maxLength: number) => {
 
 function ProjectTile({repoOwner, repository, description, liveLink, repoLink}: ProjectTileType) {
   return (
-    <div className="box-border flex flex-col w-1/4 text-center border p-3 gap-3 rounded-3xl hover:shadow-lg bg-white">
+    <div className="box-border flex flex-col lg:w-1/4 w-11/12 text-center border p-3 gap-3 rounded-3xl hover:shadow-lg bg-white">
       <p className="font-bold">{repoOwner}/{repository}</p>
       <p className="text-gray-600">{truncateText(description, 115)}</p>
       <div className="flex justify-between">
         {/* <TechStack techArray={techArr} /> */}
-        <a href={liveLink} className={`border p-2 w-1/5 rounded-xl bg-[#2b3a52] text-white font-bold hover:shadow-lg ${!liveLink ? 'pointer-events-none' : 'pointer-events-auto'}`}>
+        <a href={liveLink} className={`border p-2 lg:w-1/5 rounded-xl bg-[#2b3a52] text-white font-bold hover:shadow-lg ${!liveLink ? 'pointer-events-none' : 'pointer-events-auto'}`}>
           Visit
         </a>
-        <a href={repoLink} className="border p-2 w-1/5 rounded-xl bg-[#2b3a52] text-white font-bold hover:shadow-lg">
+        <a href={repoLink} className="border p-2 lg:w-1/5 rounded-xl bg-[#2b3a52] text-white font-bold hover:shadow-lg">
           GitHub
         </a>
       </div>
