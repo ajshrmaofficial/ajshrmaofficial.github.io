@@ -1,27 +1,3 @@
-// import reactIcon from "../assets/svg/react.svg";
-// import reactnativeIcon from "../assets/svg/react-native.svg";
-// import nodejsIcon from "../assets/svg/nodejs.svg";
-// import socketioIcon from "../assets/svg/socket.io.svg";
-// import reactqueryIcon from "../assets/svg/react-query.svg";
-// import springIcon from "../assets/svg/spring.svg";
-// import cIcon from "../assets/svg/c.svg";
-// import linuxIcon from "../assets/svg/linux.svg";
-// import dockerIcon from "../assets/svg/docker.svg";
-// import bashIcon from "../assets/svg/bash.svg";
-
-// const techMap = new Map([
-//     [ "React", reactIcon ],
-//       [ "React Native", reactnativeIcon ],
-//       [ "NodeJS", nodejsIcon ],
-//       [ "Socket.io", socketioIcon ],
-//       [ "React Query", reactqueryIcon ],
-//       [ "Spring Boot", springIcon ],
-//       [ "C", cIcon ],
-//       [ "Linux", linuxIcon ],
-//       [ "Docker", dockerIcon ],
-//       [ "Bash", bashIcon ],
-// ]);
-
 type ProjectTileType = {
   repoOwner: string;
   repository: string;
