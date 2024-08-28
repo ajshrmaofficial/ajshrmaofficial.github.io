@@ -1,9 +1,8 @@
-import {Container} from "./Container";
 import ProfileBlob from "./ProfileBlob";
 
 function Home() {
   return (
-    <Container name="home">
+    <div id="home" className="flex flex-col min-h-svh items-center gap-10 justify-center lg:justify-between lg:flex-row">
       <div className="flex justify-center w-1/2">
           <ProfileBlob />
       </div>
@@ -12,7 +11,7 @@ function Home() {
         <h1 className="text-6xl font-bold">I'm Ajay Sharma</h1>
         <a className="border-2 border-gray-400 lg:p-3 p-1 font-bold lg:text-lg text-md hover:border-black" href="/files/Ajay Sharma Resume V4.pdf"  target="_blank" rel="noopener noreferrer"><h2>Download Resume</h2></a>
       </div>
-    </Container>
+    </div>
   );
 }
 
