@@ -9,8 +9,8 @@ function About() {
         <div className="w-full lg:w-2/6 h-40 border border-black rounded-3xl flex flex-col justify-center items-center">
           <img src={experienceLogo} alt="" className='w-8' />
           <p className='font-black text-xl'>Experience</p>
-          <p className='text-gray-600'>6 months</p>
-          <p className='text-gray-600'>React Native Developer</p>
+          <p className='text-gray-600'>11 months</p>
+          <p className='text-gray-600'>Full Stack Developer</p>
         </div>
         <div className="w-full lg:w-2/6 h-40 border border-black rounded-3xl flex flex-col justify-center items-center">
         <img src={educationLogo} alt="" className='w-8' />
@@ -25,7 +25,7 @@ function About() {
           in New Delhi.
         </p>
         <p>
-          At 22, I'm wrapping up my{" "}
+          At 23, I'm wrapping up my{" "}
           <b>B.Tech in Computer Science and Engineering</b><br/> but my passion for
           coding has been running strong for years.
         </p>
