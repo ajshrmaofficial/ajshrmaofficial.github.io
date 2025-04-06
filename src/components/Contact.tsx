@@ -29,7 +29,7 @@ function Contact(){
                 </div>
                 ))}
             </div>
-        <p className='text-gray-600'>Copyright © 2024 Ajay Sharma. All Rights Reserved.</p>
+        <p className='text-gray-600'>Copyright © 2025 Ajay Sharma. All Rights Reserved.</p>
         </div>
     )
 }
