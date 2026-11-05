@@ -1,16 +1,37 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*, *::before, *::after{
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-base font-body text-ink antialiased;
+    font-size: 1.1875rem;
+    line-height: 1.65;
+  }
+
+  a:focus-visible {
+    @apply rounded-sm outline outline-2 outline-offset-4 outline-accent;
+  }
+
+  ::selection {
+    @apply bg-accent/20;
+  }
 }
 
-html{
-  /* font-size: 62.5%; */
-  scroll-behavior: smooth;
+@layer components {
+  h1, h2, h3 {
+    @apply font-display;
+    line-height: 1.2;
+  }
 }

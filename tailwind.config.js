@@ -7,18 +7,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        offWhite: "#f9f9f9",
-        darkGray: "#2d2e32",
-        lightGray: "#555555"
+        base: "#1e1b18",
+        ink: "#d3cbbf",
+        muted: "#968c80",
+        accent: "#de8b60",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        display: ["Fraunces", "ui-serif", "Georgia", "serif"],
+        body: ["Newsreader", "ui-serif", "Georgia", "serif"],
       },
-      boxShadow: {
-        'navBarShadow': '0 0 10px rgba(0, 0, 0, .09)',
-      }
+      keyframes: {
+        morph: {
+          "0%, 100%": { borderRadius: "28% 72% 74% 26% / 7% 35% 65% 93%" },
+          "25%": { borderRadius: "86% 14% 28% 72% / 66% 12% 88% 34%" },
+          "50%": { borderRadius: "78% 22% 46% 54% / 90% 78% 22% 10%" },
+          "75%": { borderRadius: "37% 63% 51% 49% / 11% 26% 74% 89%" },
+        },
+      },
+      animation: {
+        morph: "morph 32s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
 }
-

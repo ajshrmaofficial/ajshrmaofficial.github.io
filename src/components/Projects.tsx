@@ -1,63 +1,48 @@
-import ProjectTile from "./ProjectTile";
-import TechStack from "./TechStack";
-
-const projectsArr = [
-  {
-    repoOwner: "ajshrmaofficial",
-    repository: "guftgu",
-    description:
-      "Guftgu is a real-time chat application. It uses React for the frontend, Node.js and Express for the backend, and Socket.io for real-time communication. It features user authentication, private messaging, and group chats.",
-    liveLink: "",
-    repoLink: "https://github.com/ajshrmaofficial/guftgu",
-  },
-  {
-    repoOwner: "ajshrmaofficial",
-    repository: "code-pencil",
-    description: "A CodePen-inspired web app built with React. Features syntax highlighting via CodeMirror, enabling interactive code editing and previewing.",
-    liveLink: "https://codepencil-ajayshrma.vercel.app",
-    repoLink: "https://github.com/ajshrmaofficial/code-pencil",
-  },
-  {
-    repoOwner: "ajshrmaofficial",
-    repository: "flyingKing",
-    description: "A React Native mobile game inspired by Flappy Bird. Built without animation libraries, featuring custom physics and AsyncStorage for high scores.",
-    liveLink: "",
-    repoLink: "https://github.com/ajshrmaofficial/flyingKing",
-  },
-  {
-    repoOwner: "ajshrmaofficial",
-    repository: "musify",
-    description: "React-based Spotify client with Node.js backend. Shows top 20 songs, enables search and playback. Uses Spotify Web API for data.",
-    liveLink: "https://musify-ajayshrma.vercel.app",
-    repoLink: "https://github.com/ajshrmaofficial/musify",
-  },
-  {
-    repoOwner: "ajshrmaofficial",
-    repository: "Spring-Cart",
-    description: "Simple e-commerce site using ReactJS and Spring Boot with REST APIs, JWT authentication, and Spring Security.",
-    liveLink: "",
-    repoLink: "https://github.com/ajshrmaofficial/Spring-Cart",
-  },
-  {
-    repoOwner: "ajshrmaofficial",
-    repository: "The-Dear-Diary",
-    description: "Diary management app in C with GTK, supports multiple users, encrypted entries, and basic auth.",
-    liveLink: "",
-    repoLink: "https://github.com/ajshrmaofficial/The-Dear-Diary",
-  },
-];
+import { otherWork, projects } from "../data/content";
+import { ExternalLink, Section } from "./ui";
 
 function Projects() {
   return (
-    <div id="projects" className="min-h-svh flex flex-col items-center justify-center gap-8 pt-20">
-        <h2 className="lg:text-6xl text-4xl font-bold">PROJECTS</h2>
-        <TechStack/>
-      <div className="flex flex-col lg:flex-row lg:flex-wrap gap-8 justify-center items-center">
-        {projectsArr.map((project) => (
-          <ProjectTile {...project} key={project.repository} />
+    <Section id="projects" title="Projects">
+      <div className="flex flex-col gap-12">
+        {projects.map((project) => (
+          <article key={project.name}>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <h3 className="font-display text-xl font-medium leading-snug">{project.name}</h3>
+              {project.note && (
+                <span className="rounded border border-ink/15 px-1.5 py-0.5 text-xs text-muted">
+                  {project.note}
+                </span>
+              )}
+            </div>
+            <p className="mt-2 text-ink/80">{project.summary}</p>
+            <ul className="mt-4 flex list-disc flex-col gap-2 pl-4 text-ink/80 marker:text-accent/50">
+              {project.points.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+            <p className="mt-4 text-[0.95rem] text-muted">{project.stack}</p>
+            <p className="mt-4 text-[0.95rem]">
+              <ExternalLink href={project.repo}>Source</ExternalLink>
+            </p>
+          </article>
         ))}
+
+        <div>
+          <h3 className="font-display text-xl font-medium leading-snug">Other work</h3>
+          <ul className="mt-3 divide-y divide-ink/10">
+            {otherWork.map((item) => (
+              <li key={item.name} className="flex flex-col gap-1 py-4">
+                <span>
+                  <ExternalLink href={item.href}>{item.name}</ExternalLink>
+                </span>
+                <span className="text-[0.95rem] text-muted">{item.text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </Section>
   );
 }
 
